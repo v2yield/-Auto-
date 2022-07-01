@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         兰大自动评教(LZUAUTO)
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.21
 // @description  兰州大学自动评教脚本
 // @author       v2yield
 // @match        http://qa.lzu.edu.cn:8081/new/student/lzdx_rank/*
@@ -245,18 +245,30 @@
     var timer = setInterval(function () {
         pjlistT = $('.btn.blue.mini');
         console.log(pjlistT)
+        console.log(pjlistT.length)
+        if(pjlistT.length > 1){
+            //开始评教
+            Action();
+            console.log('结束')
+            clearInterval(timer)
+        }
+    },2000);
+
+    function Action() {
+       var timer = setInterval(function () {
+        pjlistT = $('.btn.blue.mini');
+        console.log(pjlistT)
         skjslist.length = 0;
         needpk.length = 0;
-        alert("运行中")
         update();
-        setTimeout(function () {
-            if (needpk.length == 0 && skjslist.length == 0) {
+        if (needpk.length == 0 && skjslist.length == 0) {
                 clearInterval(timer);
                 console.log('关闭时钟');
                 alert('完成')
-            } else {
+        } else {
                 checkcomment();
-            }
-        }, 2000)
-    }, 10000);
+       }
+
+       }, 4000);
+    };
 })();
