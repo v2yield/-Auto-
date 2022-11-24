@@ -5,4 +5,4 @@
 ## 如何使用
 * 该脚本已发布在 https://greasyfork.org/zh-CN 上，添加至 Tampermonkey 上即可。
 
-**本脚本已G，FuckLZU!**
+<!-- **本脚本已G，FuckLZU!** -->
