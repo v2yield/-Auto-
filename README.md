@@ -1,8 +1,10 @@
+
 # LZU-Auto
 兰州大学自动评教脚本
+## 个人工作台23年开始全面更新，此脚本已失效
+## 声明
+仅供测试使用，不可用于任何非法用途！
 ## 描述
 打开评教网页，脚本自动运行，无需进行其他操作。当脚本跳出“完成”弹窗，即说明评教已完成，重新刷新界面即可。 如果出现debugger中断，请在控制台中禁用断点。
 ## 如何使用
-* 该脚本已发布在 https://greasyfork.org/zh-CN 上，添加至 Tampermonkey 上即可。
-
-<!-- **本脚本已G，FuckLZU!** -->
+* 该脚本已发布在 [Greasy Fork](https://greasyfork.org/zh-CN/scripts/444085-%E5%85%B0%E5%A4%A7%E8%87%AA%E5%8A%A8%E8%AF%84%E6%95%99-lzuauto) 上，添加至 Tampermonkey 上即可。
